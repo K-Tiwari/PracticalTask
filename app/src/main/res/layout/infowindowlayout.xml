@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_profileimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_user" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/iv_profileimg"
+            android:padding="2dp"
+            android:text=""
+            android:textColor="@color/purple_500" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_toEndOf="@+id/iv_profileimg"
+            android:padding="2dp"
+            android:text=""
+            android:textColor="@color/purple_200" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_currentlocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativelayout"
+        android:padding="2dp"
+        android:text=""
+        android:textColor="@color/purple_700"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_telephone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_currentlocation"
+        android:padding="2dp"
+        android:text=""
+        android:textColor="@color/purple_700"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_pincode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_telephone"
+        android:padding="2dp"
+        android:text=""
+        android:textColor="@color/purple_700"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_pincode"
+        android:padding="2dp"
+        android:text=""
+        android:textColor="@color/purple_700"
+        android:textSize="14sp" />
+
+</RelativeLayout>
